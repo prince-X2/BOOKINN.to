@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bokksky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<body>
+
+    <div class="navbar">
+        <h1>BOOKINN.to</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>FIGHT CLUB</h2>
+            <h5>Author - Chuck Palahniuk</h5>
+            <p>Fight Club (1999) - Plot - IMDb"Fight Club" is a psychological thriller about an insomniac office worker who, feeling deeply dissatisfied with his life, starts an underground fight club with a charismatic soap salesman named Tyler Durden, where men can violently release their frustrations, leading to a chaotic and destructive spiral that challenges societal norms and consumerism.</p>
+            <button onclick="deletebook(event)">Delete</button>
+
+        </div>
+        
+
+    </div>
+    <button class="add-button" id="add-popup-button">+</button>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>ADD BOOK</h2>
+        <form>
+            <input type="text" placeholder="Book title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea type="text" placeholder="Short description" id="book-discription-input"></textarea>
+            <button id="add-book">ADD</button>
+            <button id="cancel-popup">CANCEL</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
